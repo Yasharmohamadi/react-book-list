@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Header from './components/Header/Header'
+import AddForm from './components/AddForm/AddForm'
 
 
 // FIRST WAY TO USE REACT
@@ -13,5 +14,9 @@ import Header from './components/Header/Header'
 // SECOND WAY TO USE REACT
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Header />
+    <React.Fragment>
+        <Header />
+
+        <AddForm />
+    </React.Fragment>
 );
