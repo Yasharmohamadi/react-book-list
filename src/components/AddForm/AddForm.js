@@ -10,7 +10,7 @@ export default class AddForm extends React.Component {
 		this.clickHandler = this.clickHandler.bind(this);
 	}
 
-	clickHandler() {
+	clickHandler(event) {
 	}
 
 	render() {

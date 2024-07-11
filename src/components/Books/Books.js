@@ -9,30 +9,10 @@ export default class Books extends React.Component {
 	render() {
 		return (
 			<div className="books_container">
-				<tr>
+				{/* <tr>
 					<th>Title</th>
 					<th>Author</th>
-				</tr>
-				<tr>
-					<td>Jahl</td>
-					<td>Yashar</td>
-				</tr>
-				<tr>
-					<td>Jahl</td>
-					<td>Yashar</td>
-				</tr>
-				<tr>
-					<td>Jahl</td>
-					<td>Yashar</td>
-				</tr>
-				<tr>
-					<td>Jahl</td>
-					<td>Yashar</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>Yashar</td>
-				</tr>
+				</tr> */}
 			</div>
 		);
 	}
