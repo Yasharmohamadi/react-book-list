@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Header from './components/Header/Header'
 import AddForm from './components/AddForm/AddForm'
+import Books from './components/Books/Books'
 
 
 // FIRST WAY TO USE REACT
@@ -18,5 +19,7 @@ root.render(
         <Header />
 
         <AddForm />
+
+        <Books />
     </React.Fragment>
 );

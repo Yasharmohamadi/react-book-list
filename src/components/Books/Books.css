@@ -1,0 +1,47 @@
+.books_container {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    box-shadow: 0 0 10px #ffffff80;
+    border-radius: 20px;
+    
+}
+
+tr:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+tr:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+tr {
+    width: 400px;
+    display: flex;
+    background: #134675;
+}
+
+tr:nth-child(even) {
+    background: #175b9b;
+}
+th, td {
+    text-align: center;
+    font-size: 25px;
+    flex-grow: 1;
+}
+
+th {
+    padding: 15px;
+    background: #438bcf;
+    
+}
+
+td {
+    padding: 5px;
+    
+    cursor: pointer;
+    
+}
