@@ -5,12 +5,30 @@ export default class AddForm extends React.Component {
 	constructor(props) {
 		super(props);
 
-		this.state = {};
+		this.state = { 
+			title: '',
+			author: '',
+			book: []
+		};
 
 		this.clickHandler = this.clickHandler.bind(this);
+		this.inputTitleHnadler = this.inputTitleHnadler.bind(this);
+		this.inputAuthorHnadler = this.inputAuthorHnadler.bind(this);
 	}
 
-	clickHandler(event) {
+	clickHandler() {
+	}
+
+	inputTitleHnadler(event) {
+		this.setState({
+			title: event.target.value
+		})
+	}
+	
+	inputAuthorHnadler(event) {
+		this.setState({
+			author: event.target.value
+		})
 	}
 
 	render() {
@@ -24,6 +42,7 @@ export default class AddForm extends React.Component {
 						className="title_input input"
 						id="title"
 						maxLength={30}
+						onChange={this.inputTitleHnadler}
 					></input>
 				</div>
 
@@ -35,6 +54,8 @@ export default class AddForm extends React.Component {
 						className="author_input input"
 						id="author"
 						maxLength={30}
+						onChange={this.inputAuthorHnadler}
+
 					></input>
 				</div>
 
