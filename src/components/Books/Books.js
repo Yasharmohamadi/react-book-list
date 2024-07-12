@@ -4,8 +4,6 @@ import "./Books.css";
 export default class Books extends React.Component {
 	constructor(props) {
 		super(props);
-
-		console.log(this.props);
 	}
 
 	render() {
