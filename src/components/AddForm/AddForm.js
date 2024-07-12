@@ -28,10 +28,11 @@ export default class AddForm extends React.Component {
 
 			this.setState({
 				books: [...this.state.books, newBook],
+				title: "",
+				author: "",
 			});
 		}
 	}
-
 
 	inputTitleHnadler(event) {
 		this.setState({
@@ -74,9 +75,7 @@ export default class AddForm extends React.Component {
 					></input>
 				</div>
 
-				<button className="button">
-					Add Book
-				</button>
+				<button className="button">Add Book</button>
 
 				<table className="books_container">
 					<thead>
