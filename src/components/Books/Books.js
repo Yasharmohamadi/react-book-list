@@ -4,16 +4,16 @@ import "./Books.css";
 export default class Books extends React.Component {
 	constructor(props) {
 		super(props);
+
+		console.log(this.props);
 	}
 
 	render() {
 		return (
-			<div className="books_container">
-				{/* <tr>
-					<th>Title</th>
-					<th>Author</th>
-				</tr> */}
-			</div>
+			<tr>
+				<td>{this.props.author}</td>
+				<td>{this.props.title}</td>
+			</tr>
 		);
 	}
 }
