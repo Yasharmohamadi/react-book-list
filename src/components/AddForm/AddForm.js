@@ -12,7 +12,6 @@ export default class AddForm extends React.Component {
 			books: [],
 		};
 
-		this.clickHandler = this.clickHandler.bind(this);
 		this.inputTitleHnadler = this.inputTitleHnadler.bind(this);
 		this.inputAuthorHnadler = this.inputAuthorHnadler.bind(this);
 		this.submitHnadler = this.submitHnadler.bind(this);
@@ -33,7 +32,6 @@ export default class AddForm extends React.Component {
 		}
 	}
 
-	clickHandler() {}
 
 	inputTitleHnadler(event) {
 		this.setState({
@@ -76,7 +74,7 @@ export default class AddForm extends React.Component {
 					></input>
 				</div>
 
-				<button className="button" onClick={this.clickHandler}>
+				<button className="button">
 					Add Book
 				</button>
 
